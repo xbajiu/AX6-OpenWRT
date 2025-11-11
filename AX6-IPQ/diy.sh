@@ -21,16 +21,16 @@ git clone --depth 1 https://github.com/hudra0/luci-app-qosmate package/luci-app-
 #git clone --depth 1 https://github.com/sbwml/luci-app-alist package/alist
 #git clone --depth=1  https://github.com/kenzok8/small-package package/small-package
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-zerotier
-#git_sparse_clone main https://github.com/kiddin9/kwrt-packages vlmcsd
-#git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-vlmcsd
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages vlmcsd
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-vlmcsd
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-subconverter
 git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
 #拉取TerryLip大佬部分源码，感谢大佬对nss的支持！
 #git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-theme-argon
 #git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-app-argon-config
 git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-app-turboacc
-git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/vlmcsd
-git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-app-vlmcsd
+#git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/vlmcsd
+#git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-app-vlmcsd
 
 # mosdns
 git_sparse_clone v5 https://github.com/sbwml/luci-app-mosdns luci-app-mosdns
