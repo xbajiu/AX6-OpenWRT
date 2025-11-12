@@ -21,10 +21,12 @@ git clone --depth 1 https://github.com/hudra0/luci-app-qosmate package/luci-app-
 #git clone --depth 1 https://github.com/sbwml/luci-app-alist package/alist
 #git clone --depth=1  https://github.com/kenzok8/small-package package/small-package
 #git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-zerotier
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages lucky
+git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-lucky
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages vlmcsd
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-vlmcsd
 git_sparse_clone main https://github.com/kiddin9/kwrt-packages luci-app-subconverter
-git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
+#git_sparse_clone dev https://github.com/vernesong/OpenClash luci-app-openclash
 #拉取TerryLip大佬部分源码，感谢大佬对nss的支持！
 #git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-theme-argon
 #git_sparse_clone qualcommax-6.x-nss-wifi https://github.com/TerryLip/AX6NSS package/new/luci-app-argon-config
@@ -52,7 +54,7 @@ git_sparse_clone v5 https://github.com/sbwml/luci-app-mosdns v2dat
 #git_sparse_clone main https://github.com/chenmozhijin/luci-app-socat luci-app-socat
 
 #删除库中的插件，使用自定义源中的包。
-rm -rf feeds/luci/applications/luci-app-openclash
+#rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/applications/luci-app-argon-config
 rm -rf feeds/packages/net/vlmcsd
@@ -74,7 +76,7 @@ echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.defa
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 
 #修改主机名
-#sed -i "s/hostname='ImmortalWrt'/hostname='Redmi-AX6'/g" package/base-files/files/bin/config_generate
+sed -i "s/hostname='ImmortalWrt'/hostname='Redmi-AX6'/g" package/base-files/files/bin/config_generate
 
 #以下代码由VIKINGYFY大佬提供
 #修改argon主题字体和颜色
